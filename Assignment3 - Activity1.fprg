@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="crossover"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-02-08 12:08:15 AM"/>
+        <attribute name="created" value="Y3Jvc3NvdmVyO01PSEFNTUVEUy1NQUNCTzsyMDIxLTAyLTA3OzEwOjMxOjI3IFBNOzMzMzY="/>
+        <attribute name="edited" value="Y3Jvc3NvdmVyO01PSEFNTUVEUy1NQUNCTzsyMDIxLTAyLTA4OzEyOjA4OjE1IEFNOzE7MzQzMw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="exam1" type="Real" array="False" size=""/>
+            <declare name="exam2" type="Real" array="False" size=""/>
+            <declare name="totalscore" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter the score for exam #1&quot;" newline="True"/>
+            <input variable="exam1"/>
+            <output expression="&quot;Enter the score for exam #2&quot;" newline="True"/>
+            <input variable="exam2"/>
+            <assign variable="exam1" expression="exam1 * 60"/>
+            <assign variable="exam2" expression="exam2 * 40"/>
+            <assign variable="totalscore" expression="(exam1 + exam2) / 100"/>
+            <output expression="&quot;The total score = &quot; &amp; totalscore" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
